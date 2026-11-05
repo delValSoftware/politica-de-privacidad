@@ -1,153 +1,191 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Política de Privacidad - Calculadora de Nota Mínima</title>
-    <style>
-        :root {
-            --bg-color: #f8fafc;
-            --card-bg: #ffffff;
-            --text-color: #1e293b;
-            --text-secondary: #64748b;
-            --accent-color: #2563eb;
-            --border-color: #e2e8f0;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Términos de Servicio y Política de Privacidad - delVal Software</title>
+  <style>
+    :root {
+      --primary-color: #0066cc;
+      --text-color: #2c3e50;
+      --bg-color: #f8f9fa;
+      --card-bg: #ffffff;
+      --border-color: #e9ecef;
+    }
 
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --bg-color: #0f172a;
-                --card-bg: #1e293b;
-                --text-color: #f8fafc;
-                --text-secondary: #94a3b8;
-                --accent-color: #3b82f6;
-                --border-color: #334155;
-            }
-        }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text-color);
+      background-color: var(--bg-color);
+      margin: 0;
+      padding: 0;
+    }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-        }
+    header {
+      background-color: var(--card-bg);
+      border-bottom: 1px solid var(--border-color);
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    }
 
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            background: var(--card-bg);
-            padding: 32px;
-            border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-            border: 1px solid var(--border-color);
-        }
+    header h1 {
+      margin: 0;
+      color: var(--primary-color);
+      font-size: 1.8rem;
+    }
 
-        h1 {
-            color: var(--accent-color);
-            font-size: 1.8rem;
-            margin-bottom: 8px;
-        }
+    header p {
+      margin: 0.5rem 0 0;
+      color: #6c757d;
+      font-size: 0.95rem;
+    }
 
-        .subtitle {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-            margin-bottom: 24px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 16px;
-        }
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
 
-        h2 {
-            font-size: 1.3rem;
-            margin-top: 24px;
-            margin-bottom: 12px;
-            color: var(--text-color);
-        }
+    .card {
+      background: var(--card-bg);
+      border-radius: 8px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      border: 1px solid var(--border-color);
+    }
 
-        p, li {
-            color: var(--text-color);
-            font-size: 1rem;
-        }
+    h2 {
+      color: var(--primary-color);
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 0.5rem;
+      margin-top: 0;
+    }
 
-        ul {
-            padding-left: 20px;
-        }
+    h3 {
+      margin-top: 1.5rem;
+      color: #34495e;
+    }
 
-        li {
-            margin-bottom: 8px;
-        }
+    ul {
+      padding-left: 1.2rem;
+    }
 
-        a {
-            color: var(--accent-color);
-            text-decoration: none;
-        }
+    li {
+      margin-bottom: 0.5rem;
+    }
 
-        a:hover {
-            text-decoration: underline;
-        }
+    a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
 
-        .footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid var(--border-color);
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            text-align: center;
-        }
-    </style>
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: #6c757d;
+      font-size: 0.9rem;
+      border-top: 1px solid var(--border-color);
+      background-color: var(--card-bg);
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 0 1rem;
+      }
+      .card {
+        padding: 1.25rem;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<div class="container">
-    <h1>Política de Privacidad</h1>
-    <p class="subtitle"><strong>Aplicación:</strong> Calculadora de Nota Mínima (com.calculadora.denotaminima)<br><strong>Última actualización:</strong> 2024</p>
+  <header>
+    <h1>delVal Software</h1>
+    <p>Términos de Servicio y Política de Privacidad</p>
+  </header>
 
-    <p>Esta Política de Privacidad describe cómo la aplicación <strong>Calculadora de Nota Mínima</strong> recopila, utiliza y protege la información de los usuarios que la utilizan.</p>
+  <main class="container">
 
-    <h2>1. Recopilación y Uso de Datos Locales</h2>
-    <p>Nuestra aplicación está diseñada para respetar plenamente la privacidad de los usuarios:</p>
-    <ul>
-        <li><strong>Sin cuenta de usuario:</strong> No requerimos ningún registro, inicio de sesión ni creación de cuenta para utilizar la aplicación.</li>
-        <li><strong>Almacenamiento Local:</strong> Todos los datos introducidos en la aplicación (nombres de asignaturas, ponderaciones, notas objetivo y notas obtenidas) se almacenan de forma exclusiva y local en la memoria de su dispositivo (mediante <code>localStorage</code>).</li>
-        <li><strong>Sin servidores propios:</strong> No recopilamos, transmitimos ni almacenamos en servidores externos ninguna de sus notas o datos personales.</li>
-    </ul>
+    <article class="card">
+      <h2>I. Términos de Servicio</h2>
+      <p><strong>Última actualización:</strong> 5 de noviembre de 2026</p>
 
-    <h2>2. Publicidad y Servicios de Terceros (Google AdMob)</h2>
-    <p>Para mantener la aplicación gratuita, utilizamos el servicio de publicidad <strong>Google AdMob</strong> (proporcionado por Google LLC).</p>
-    <p>Google AdMob puede recopilar y utilizar ciertos datos técnicos del dispositivo para mostrar anuncios publicitarios adaptados o no personalizados. Estos datos pueden incluir:</p>
-    <ul>
-        <li>Identificador de publicidad del dispositivo (ID de publicidad de Android).</li>
-        <li>Dirección IP y datos generales de ubicación geográfica aproximada.</li>
-        <li>Datos sobre el rendimiento del anuncio e interacciones.</li>
-        <li>Información del estado de la red y del dispositivo.</li>
-    </ul>
+      <h3>1. Aceptación de los Términos</h3>
+      <p>Al descargar, instalar o utilizar esta aplicación (en adelante, la "Aplicación"), el usuario acepta quedar vinculado por los presentes Términos de Servicio. Si no está de acuerdo con alguno de ellos, debe desinstalar la Aplicación inmediatamente.</p>
 
-    <h2>3. Políticas de Privacidad de Terceros</h2>
-    <p>Le recomendamos consultar las políticas de privacidad del proveedor de servicios de publicidad utilizado por nuestra aplicación:</p>
-    <ul>
-        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de Google</a></li>
-        <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">Cómo utiliza Google la información de sitios o aplicaciones que utilizan sus servicios</a></li>
-    </ul>
+      <h3>2. Licencia de Uso</h3>
+      <p>delVal Software concede al usuario una licencia limitada, personal, no exclusiva, intransferible y revocable para utilizar la Aplicación en dispositivos Android de su propiedad o bajo su control, exclusivamente para uso personal y no comercial.</p>
 
-    <h2>4. Control de la Publicidad Personalizada</h2>
-    <p>Los usuarios pueden gestionar o restablecer su identificador de publicidad, o desactivar los anuncios personalizados en su dispositivo Android accediendo a:</p>
-    <p><code>Ajustes del dispositivo &gt; Google &gt; Anuncios</code>.</p>
+      <h3>3. Propiedad Intelectual</h3>
+      <p>Todos los derechos de propiedad intelectual sobre el código fuente, la interfaz de usuario, los elementos gráficos, logotipos, marcas y contenidos pertenecen en exclusiva a <strong>delVal Software</strong>. Queda estrictamente prohibida la descompilación, ingeniería inversa, modificación o redistribución no autorizada del software.</p>
 
-    <h2>5. Privacidad de los Menores</h2>
-    <p>La aplicación está orientada a público general y estudiantes. No recopilamos a sabiendas información de identificación personal de niños menores de 13 años.</p>
+      <h3>4. Publicidad e Integración con Terceros</h3>
+      <p>La Aplicación se ofrece de forma gratuita y está monetizada mediante la plataforma publicitaria <strong>Google AdMob</strong>. Al utilizar la Aplicación, el usuario reconoce y acepta la visualización de anuncios proporcionados por Google y sus socios publicitarios.</p>
 
-    <h2>6. Cambios en esta Política de Privacidad</h2>
-    <p>Podemos actualizar nuestra Política de Privacidad periódicamente. Se recomienda revisar esta página regularmente para estar al tanto de cualquier cambio.</p>
+      <h3>5. Limitación de Responsabilidad</h3>
+      <p>La Aplicación se proporciona "tal cual" (<em>as is</em>) y "según disponibilidad", sin garantías de ningún tipo, implícitas o explícitas. delVal Software no responderá por interrupciones del servicio, fallos técnicos, errores de software ni por los contenidos o servicios anunciados a través de la red de AdMob.</p>
 
-    <h2>7. Contacto</h2>
-    <p>Si tiene alguna duda o pregunta sobre esta Política de Privacidad, puede ponerse en contacto con nosotros a través del correo electrónico:</p>
-    <p><strong>Correo de soporte:</strong> <a href="mailto:soporte@calculadoradenotaminima.com">soporte@calculadoradenotaminima.com</a></p>
+      <h3>6. Modificaciones de los Términos</h3>
+      <p>delVal Software se reserva el derecho de actualizar estos Términos en cualquier momento. El uso continuado de la Aplicación tras la publicación de cambios constituye la aceptación implícita de los mismos.</p>
+    </article>
 
-    <div class="footer">
-        &copy; Calculadora de Nota Mínima. Todos los derechos reservados.
-    </div>
-</div>
+    <article class="card">
+      <h2>II. Política de Privacidad</h2>
+
+      <h3>1. Responsable del Tratamiento</h3>
+      <ul>
+        <li><strong>Entidad:</strong> delVal Software</li>
+        <li><strong>Ubicación:</strong> Aranda de Duero, Burgos, España</li>
+        <li><strong>Contacto:</strong> Soporte a través de los canales oficiales habilitados en la tienda de aplicaciones.</li>
+      </ul>
+
+      <h3>2. Información Recopilada Automáticamente</h3>
+      <p>La Aplicación no requiere el registro de cuenta personal ni almacena datos de identificación directa (como nombre o correo electrónico) en servidores propios. Sin embargo, mediante la integración de <strong>Google AdMob</strong>, se recopilan de forma automática los siguientes datos:</p>
+      <ul>
+        <li><strong>Identificadores publicitarios:</strong> ID de publicidad de Google (AAID).</li>
+        <li><strong>Información técnica:</strong> Dirección IP, modelo del dispositivo, fabricante, versión del sistema operativo e idioma.</li>
+        <li><strong>Datos de interacción:</strong> Registro de impresiones de anuncios, clics y eventos de rendimiento de la app.</li>
+      </ul>
+
+      <h3>3. Finalidad del Tratamiento de Datos</h3>
+      <p>Los datos recopilados por Google AdMob se utilizan para:</p>
+      <ul>
+        <li>Servir anuncios personalizados o no personalizados según la configuración de privacidad del usuario.</li>
+        <li>Prevenir el fraude y garantizar la seguridad de la red publicitaria.</li>
+        <li>Obtener analíticas agregadas sobre el rendimiento y uso de la Aplicación.</li>
+      </ul>
+
+      <h3>4. Proveedores de Servicios de Terceros</h3>
+      <p>La Aplicación utiliza los siguientes servicios de terceros que pueden recopilar información utilizada para identificarle:</p>
+      <ul>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
+        <li><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">Google AdMob</a></li>
+      </ul>
+
+      <h3>5. Gestión de Preferencias de Publicidad</h3>
+      <p>El usuario puede gestionar o desactivar la personalización de anuncios en cualquier momento desde su dispositivo Android:</p>
+      <p><em>Ajustes del dispositivo &gt; Google &gt; Anuncios &gt; Eliminar o restablecer ID de publicidad.</em></p>
+
+      <h3>6. Cumplimiento Legal (RGPD)</h3>
+      <p>En cumplimiento del Reglamento General de Protección de Datos (RGPD) de la UE, si reside en el Espacio Económico Europeo (EEE), se le solicitará su consentimiento explícito para el procesamiento de datos publicitarios mediante el panel de consentimiento (UMP) integrado en la Aplicación.</p>
+
+      <h3>7. Menores de Edad</h3>
+      <p>Esta Aplicación no está dirigida conscientemente a menores de 13 años sin el consentimiento de sus padres o tutores. delVal Software cumple con las directrices de la política de familias de Google Play.</p>
+    </article>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 delVal Software. Todos los derechos reservados.</p>
+  </footer>
 
 </body>
 </html>
